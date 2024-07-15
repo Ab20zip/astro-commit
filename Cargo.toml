@@ -1,0 +1,15 @@
+[package]
+name = "astrocommit"
+version = "0.0.1"
+authors = ["Aarav Bundela <aarav.bundela@outlook.com>"]
+edition = "2021"
+
+[dependencies]
+rust-bert = { version = "0.12.1", default-features = false }
+clap = { version = "4.5.9", features = ["derive"] }
+chrono = "0.4.38"
+tokio = { version = "1.38.0", features = ["full"] }
+
+[[bin]]
+name = "astrocommit"
+path = "src/main.rs"
